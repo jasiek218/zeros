@@ -68,10 +68,10 @@ int main()
 		if (iloscWatkow == 1)
 		{
 			skokPodzialu = (b - a) / 2;
-			//if f(a)*f(x)<0 then
-			//	b:=x
-			//else
-			//	a:=x;
+			if (f(a)*f(x)<0)
+				b=x;
+			else
+				a=x;
 		}
 		else
 		{
