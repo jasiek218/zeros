@@ -27,8 +27,8 @@ int main()
 	b=11;
 	x=0;
 	dokladnosc=0.0001;
-	omp_set_num_threads(1);
-	iloscWatkow = omp_get_max_threads();
+	omp_set_num_threads(4); //ustawianie ilosci watkow
+	iloscWatkow = omp_get_max_threads(); //pobieranie maksymalnej ilosc watkow
 	//float Start = GetTickCount(); // Pocz¹tek czasu dzia³ania programu
 	long double * start = (long double*) malloc(iloscWatkow * sizeof(long double)); //stworzenie tablicy poczatków przedzia³u dla wszystkich w¹tków
 	long double * koniec = (long double*) malloc(iloscWatkow * sizeof(long double)); //stworzenie tablicy konców przedzia³u dla wszystkich w¹tków
